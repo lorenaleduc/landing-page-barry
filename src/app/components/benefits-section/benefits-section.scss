@@ -1,0 +1,203 @@
+.benefits-section {
+  padding: 46px 24px;
+  background: #08000f;
+  border-bottom: 1px solid #1d1028;
+}
+
+.benefits-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 57% 43%;
+  align-items: stretch;
+  background: #090011;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.before-after {
+  height: 365px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.before-side,
+.after-side {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.before-side {
+  background: #211f2c;
+}
+
+.after-side {
+  background: linear-gradient(
+    135deg,
+    #7900ff 0%,
+    #9d00ff 35%,
+    #c94da9 68%,
+    #fee500 115%
+  );
+
+  border-left: 2px solid #fee500;
+}
+
+.before-icon {
+  color: #4c4855;
+  font-size: 26px;
+}
+
+.after-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.after-sparkles {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.after-title {
+  color: rgba(255, 255, 255, 0.32);
+  font-family: 'Manrope', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.comparison-label {
+  position: absolute;
+  bottom: 15px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.before-label {
+  left: 16px;
+  background: #08000f;
+  color: #ffffff;
+}
+
+.after-label {
+  right: 16px;
+  background: #fee500;
+  color: #08000f;
+}
+
+.benefits-content {
+  padding: 34px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #090011;
+}
+
+.benefits-tag {
+  width: fit-content;
+  padding: 5px 12px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #1b0733;
+  border: 1px solid #542091;
+  border-radius: 999px;
+  color: #fee500;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.benefits-tag i {
+  color: #fee500;
+  font-size: 8px;
+}
+
+.benefits-content h2 {
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.benefits-content h2 span {
+  color: #fee500;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.benefits-description {
+  margin: 18px 0 22px;
+  color: #aaa2b3;
+  font-family: 'Manrope', sans-serif;
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.benefits-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  list-style: none;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #bbb3c5;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+}
+
+.benefits-list li i {
+  width: 8px;
+  flex-shrink: 0;
+  color: #fee500;
+  font-size: 9px;
+}
+
+@media (max-width: 900px) {
+  .benefits-container {
+    grid-template-columns: 1fr;
+  }
+
+  .before-after {
+    height: 330px;
+  }
+
+  .benefits-content {
+    padding: 40px 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .before-after {
+    height: 270px;
+  }
+
+  .benefits-content h2 {
+    font-size: 26px;
+  }
+
+  .benefits-content h2 span {
+    font-size: 27px;
+  }
+}

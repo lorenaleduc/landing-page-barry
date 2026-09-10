@@ -1,1 +1,148 @@
-<p>faq-section works!</p>
+<section class="faq-section" id="faq">
+  <div class="faq-container">
+
+    <div class="faq-header">
+      <h2>DÚVIDAS FREQUENTES</h2>
+
+      <a class="faq-contact" href="#">
+        Ainda tem dúvidas? Fale com a gente
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="faq-divider"></div>
+
+    <div class="faq-list">
+
+      <div class="faq-item" [class.open]="openIndex === 0">
+        <button class="faq-question" type="button" (click)="toggleFaq(0)">
+          <span>Como recebo o pack após a compra?</span>
+          <span class="faq-symbol">{{ openIndex === 0 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 0) {
+          <div class="faq-answer">
+            <p>
+              Após a confirmação do pagamento, você recebe o acesso ao pack
+              digital para começar a usar os arquivos.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 1">
+        <button class="faq-question" type="button" (click)="toggleFaq(1)">
+          <span>Preciso de internet para usar?</span>
+          <span class="faq-symbol">{{ openIndex === 1 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 1) {
+          <div class="faq-answer">
+            <p>
+              Você precisa de internet para baixar os arquivos. Depois do
+              download, os assets podem ser utilizados diretamente no seu
+              software de edição.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 2">
+        <button class="faq-question" type="button" (click)="toggleFaq(2)">
+          <span>Funciona no meu editor?</span>
+          <span class="faq-symbol">{{ openIndex === 2 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 2) {
+          <div class="faq-answer">
+            <p>
+              O pack foi pensado para funcionar com os principais softwares
+              de edição apresentados no site.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 3">
+        <button class="faq-question" type="button" (click)="toggleFaq(3)">
+          <span>O pack tem garantia?</span>
+          <span class="faq-symbol">{{ openIndex === 3 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 3) {
+          <div class="faq-answer">
+            <p>
+              Sim. A compra conta com 7 dias de garantia.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 4">
+        <button class="faq-question" type="button" (click)="toggleFaq(4)">
+          <span>Posso usar em projetos para clientes?</span>
+          <span class="faq-symbol">{{ openIndex === 4 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 4) {
+          <div class="faq-answer">
+            <p>
+              Sim. Os assets podem ser utilizados nos seus projetos de edição
+              para clientes.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 5">
+        <button class="faq-question" type="button" (click)="toggleFaq(5)">
+          <span>E se eu tiver algum problema?</span>
+          <span class="faq-symbol">{{ openIndex === 5 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 5) {
+          <div class="faq-answer">
+            <p>
+              Você poderá entrar em contato com o suporte para receber ajuda
+              com dúvidas relacionadas ao pack.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 6">
+        <button class="faq-question" type="button" (click)="toggleFaq(6)">
+          <span>Recebo atualizações?</span>
+          <span class="faq-symbol">{{ openIndex === 6 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 6) {
+          <div class="faq-answer">
+            <p>
+              Sim. O pack prevê atualizações gratuitas para manter o conteúdo
+              sempre atualizado.
+            </p>
+          </div>
+        }
+      </div>
+
+      <div class="faq-item" [class.open]="openIndex === 7">
+        <button class="faq-question" type="button" (click)="toggleFaq(7)">
+          <span>Quais formas de pagamento vocês aceitam?</span>
+          <span class="faq-symbol">{{ openIndex === 7 ? '−' : '+' }}</span>
+        </button>
+
+        @if (openIndex === 7) {
+          <div class="faq-answer">
+            <p>
+              As formas de pagamento disponíveis serão apresentadas no
+              checkout no momento da compra.
+            </p>
+          </div>
+        }
+      </div>
+
+    </div>
+
+  </div>
+</section>

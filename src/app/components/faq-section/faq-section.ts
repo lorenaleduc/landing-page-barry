@@ -1,9 +1,19 @@
 import { Component } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-faq-section',
-  styleUrl: './faq-section.scss',
+  imports: [],
   templateUrl: './faq-section.html',
+  styleUrl: './faq-section.scss'
 })
-export class FaqSection {}
+export class FaqSection {
+  openIndex: number | null = null;
+
+  toggleFaq(index: number): void {
+    if (this.openIndex === index) {
+      this.openIndex = null;
+    } else {
+      this.openIndex = index;
+    }
+  }
+}

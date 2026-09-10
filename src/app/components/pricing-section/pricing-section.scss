@@ -1,0 +1,269 @@
+.pricing-section {
+  padding: 90px 24px;
+  background: #08000f;
+  border-bottom: 1px solid #1d1028;
+}
+
+.pricing-container {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 38% 62%;
+  align-items: center;
+  gap: 55px;
+}
+
+/* TEXTO DA ESQUERDA */
+
+.pricing-content h2 {
+  margin: 0;
+
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 31px;
+  line-height: 1.02;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.pricing-content h2 span {
+  color: #fee500;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.pricing-content p {
+  max-width: 390px;
+  margin: 22px 0 0;
+
+  color: #aaa2b3;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* CARD DA OFERTA */
+
+.pricing-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 38px 40px 32px;
+
+  background: #fee500;
+  border: 2px solid #ffed45;
+  border-radius: 22px;
+
+  color: #08000f;
+
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.28);
+}
+
+/* TAG */
+
+.pricing-tag {
+  width: fit-content;
+  padding: 7px 14px;
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  background: #08000f;
+  border-radius: 999px;
+
+  color: #fee500;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.pricing-tag i {
+  font-size: 8px;
+}
+
+/* PREÇOS */
+
+.old-price {
+  width: fit-content;
+  margin-bottom: 2px;
+
+  position: relative;
+
+  color: #08000f;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.old-price::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+
+  height: 1px;
+  background: #08000f;
+}
+
+.current-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+
+  color: #08000f;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.currency {
+  font-size: 37px;
+  line-height: 1;
+}
+
+.price {
+  font-size: 58px;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+.payment-info {
+  margin: 7px 0 22px;
+
+  color: #08000f;
+  font-family: 'Manrope', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* BOTÃO */
+
+.pricing-button {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: #08000f;
+  border-radius: 999px;
+
+  color: #ffffff;
+  font-family: 'Manrope', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pricing-button i {
+  font-size: 11px;
+}
+
+.pricing-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 11px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* DIVISÃO */
+
+.pricing-divider {
+  width: 100%;
+  height: 1px;
+  margin: 22px 0 18px;
+
+  background: rgba(8, 0, 15, 0.18);
+}
+
+/* BENEFÍCIOS INFERIORES */
+
+.pricing-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.pricing-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: #08000f;
+  font-family: 'Manrope', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.pricing-benefit i {
+  font-size: 18px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .pricing-container {
+    max-width: 620px;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .pricing-content {
+    text-align: center;
+  }
+
+  .pricing-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing-card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-section {
+    padding: 60px 16px;
+  }
+
+  .pricing-card {
+    padding: 30px 22px 26px;
+  }
+
+  .pricing-content h2 {
+    font-size: 27px;
+  }
+
+  .pricing-content h2 span {
+    font-size: 28px;
+  }
+
+  .currency {
+    font-size: 29px;
+  }
+
+  .price {
+    font-size: 48px;
+  }
+
+  .pricing-benefits {
+    gap: 12px;
+  }
+
+  .pricing-benefit {
+    font-size: 9px;
+  }
+}
